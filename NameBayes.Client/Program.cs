@@ -53,6 +53,7 @@ namespace NameBayes.Client
 
         static string[] GetParameter(string name, string gender)
         {
+            name = name.ToLowerInvariant();
             return new string[]
                 {
                     IsAEIOUY(name),
